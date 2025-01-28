@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kochrezepte</title>
+    <style>
+        /* Allgemeine Formatierungen */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #fafafa;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        header {
+            background-color: #ff6347;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+
+        p {
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .category {
+            margin-bottom: 50px;
+        }
+
+        .category h2 {
+            font-size: 2.5em;
+            color: #ff6347;
+            border-bottom: 3px solid #ff6347;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        .recipe {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .recipe:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .recipe h3 {
+            font-size: 2em;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .ingredients, .instructions {
+            margin-top: 20px;
+        }
+
+        .ingredients h4, .instructions h4 {
+            font-size: 1.5em;
+            color: #444;
+        }
+
+        .ingredients ul, .instructions ol {
+            margin-left: 20px;
+        }
+
+        .ingredients li, .instructions li {
+            margin-bottom: 8px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Leckere Kochrezepte</h1>
+        <p>Finde deine nächsten Lieblingsrezepte!</p>
+    </header>
+
+    <div class="container">
+        <!-- Hauptgerichte -->
+        <div class="category">
+            <h2>Hauptgerichte</h2>
+
+            <!-- Rezept 1 -->
+            <div class="recipe">
+                <h3>Spaghetti Aglio e Olio</h3>
+                <div class="ingredients">
+                    <h4>Zutaten:</h4>
+                    <ul>
+                        <li>Spaghetti (250g)</li>
+                        <li>Olivenöl (4 EL)</li>
+                        <li>Knoblauch (4 Zehen, in Scheiben)</li>
+                        <li>Chili-Flocken (nach Geschmack)</li>
+                        <li>Frischer Basilikum (zum Garnieren)</li>
+                        <li>Parmesan (nach Belieben)</li>
+                    </ul>
+                </div>
+                <div class="instructions">
+                    <h4>Zubereitung:</h4>
+                    <ol>
+                        <li>Spaghetti in reichlich Salzwasser al dente kochen.</li>
+                        <li>Olivenöl in einer Pfanne erhitzen, Knoblauch und Chili-Flocken hinzufügen und vorsichtig anbraten.</li>
+                        <li>Die gekochten Spaghetti abgießen und in die Pfanne geben. Alles gut vermengen.</li>
+                        <li>Mit frischem Basilikum und Parmesan garnieren und servieren.</li>
+                    </ol>
+                </div>
+            </div>
+
+            <!-- Rezept 2 -->
+            <div class="recipe">
+                <h3>Rindersteak mit Kräuterbutter</h3>
+                <div class="ingredients">
+                    <h4>Zutaten:</h4>
+                    <ul>
+                        <li>Rindersteaks (2 Stück)</li>
+                        <li>Butter (50g)</li>
+                        <li>Kräuter (Rosmarin, Thymian)</li>
+                        <li>Knoblauch (2 Zehen, zerdrückt)</li>
+                        <li>Salz & Pfeffer</li>
+                    </ul>
+                </div>
+                <div class="instructions">
+                    <h4>Zubereitung:</h4>
+                    <ol>
+                        <li>Steaks mit Salz und Pfeffer würzen und in einer heißen Pfanne braten.</li>
+                        <li>Butter schmelzen, Kräuter und Knoblauch hinzufügen und mit den Steaks vermengen.</li>
+                        <li>Steaks mit der Kräuterbutter übergießen und servieren.</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <!-- Desserts -->
+        <div class="category">
+            <h2>Desserts</h2>
+
+            <!-- Rezept 3 -->
+            <div class="recipe">
+                <h3>Schokoladenkuchen</h3>
+                <div class="ingredients">
+                    <h4>Zutaten:</h4>
+                    <ul>
+                        <li>Mehl (200g)</li>
+                        <li>Zucker (150g)</li>
+                        <li>Kakaopulver (50g)</li>
+                        <li>Backpulver (1 TL)</li>
+                        <li>Milch (200ml)</li>
+                        <li>Butter (100g, geschmolzen)</li>
+                        <li>Eier (2 Stück)</li>
+                        <li>Vanilleextrakt (1 TL)</li>
+                    </ul>
+                </div>
+                <div class="instructions">
+                    <h4>Zubereitung:</h4>
+                    <ol>
+                        <li>Den Ofen auf 180°C vorheizen und eine Kuchenform einfetten.</li>
+                        <li>Alle trockenen Zutaten in einer Schüssel mischen.</li>
+                        <li>Milch, Eier, geschmolzene Butter und Vanilleextrakt in einer separaten Schüssel verrühren.</li>
+                        <li>Die feuchten Zutaten zu den trockenen Zutaten geben und zu einem Teig verrühren.</li>
+                        <li>Den Teig in die Form füllen und 30-35 Minuten backen. Mit einem Zahnstocher testen, ob der Kuchen durchgebacken ist.</li>
+                        <li>Abkühlen lassen und genießen!</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Kochrezepte Website</p>
+    </footer>
+</body>
+</html>
